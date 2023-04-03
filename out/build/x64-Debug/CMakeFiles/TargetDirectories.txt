@@ -1,0 +1,5 @@
+C:/Users/Svyatoslav/Desktop/C++/skillbox_homework/24/24_2_birthday_reminders/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Svyatoslav/Desktop/C++/skillbox_homework/24/24_2_birthday_reminders/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Svyatoslav/Desktop/C++/skillbox_homework/24/24_2_birthday_reminders/out/build/x64-Debug/src/CMakeFiles/24_2_birthday_reminders.dir
+C:/Users/Svyatoslav/Desktop/C++/skillbox_homework/24/24_2_birthday_reminders/out/build/x64-Debug/src/CMakeFiles/edit_cache.dir
+C:/Users/Svyatoslav/Desktop/C++/skillbox_homework/24/24_2_birthday_reminders/out/build/x64-Debug/src/CMakeFiles/rebuild_cache.dir
