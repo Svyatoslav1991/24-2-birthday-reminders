@@ -9,25 +9,23 @@ int main()
 	std::cout << "\tTASK 24.2 BIRTHDAY REMINDERS\n";
 
 	std::list<Person> persons;
-	int decision;
 
 	try
 	{
-		do {
-			std::cout << "\nEnter 1, to add new users birthday,\n";
-			std::cout << "Enter 2, to continue work with programm\n";
-			decision = myCin<decltype(decision)>();
+		Person p;
+		while (true)
+		{
+			p = getPerson();
 
-			if (decision == 1)
+			if (p.name == "end")
 			{
-				persons.push_back(getPerson());
+				break;
 			}
-			else if (decision != 2)
+			else
 			{
-				std::cout << "You've entered someting wrong, try again\n";
+				persons.push_back(p);
 			}
-
-		} while (decision != 2);
+		}
 
 		persons.sort([](const Person& p1, const Person& p2) {
 			if (p1.birthday.tm_mon < p2.birthday.tm_mon)
@@ -44,10 +42,18 @@ int main()
 
 		std::cout << "\n";
 
-		for (const auto& p : persons)
+		if (persons.empty())
 		{
-			printInfoAboutPerson(p);
+			std::cout << "No information\n";
 		}
+		else
+		{
+			for (const auto& p : persons)
+			{
+				printInfoAboutPerson(p);
+			}
+		}
+		
 
 	}
 	catch (const std::invalid_argument& e)

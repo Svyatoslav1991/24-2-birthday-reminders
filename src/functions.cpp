@@ -7,12 +7,18 @@ Person getPerson()
 {
 	Person person;
 
-	std::cout << "Enter Enter the person's name and date of birth (YYYY/MM/DD): ";
+	std::cout << "Enter the person's name and date of birth (YYYY/MM/DD) or \"end\" to continue programm: ";
 	std::string input;
 	std::getline(std::cin, input);
 
 	std::istringstream iss(input);
 	iss >> person.name;
+
+	if (person.name == "end")
+	{
+		person.birthday = std::tm{};
+		return person;
+	}
 
 	std::string dateStr;
 	iss >> dateStr;
